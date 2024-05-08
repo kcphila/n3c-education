@@ -45,15 +45,15 @@
 </style>
 
 <div class="container-fluid">
-	<strapi:footers ID="1">
+	<strapi:tenantFooters ID="2">
 		<div class="row footer-block">
 			<div class="col-xs-12 col-md-3">
-				<strapi:files ID="51">
-					<img alt="" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/><strapi:filesUrl/>" style="padding: 20px; max-width: 300px; margin: auto; align-self: flex-start;">
+				<strapi:files ID="359">
+					<img alt="" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/><strapi:filesUrl/>" style="padding: 20px; max-width: 200px; margin: auto; align-self: flex-start;">
 				</strapi:files>
 			</div>
 			<div class="col-xs-12 col-md-9">
-				<util:markdown2html><strapi:footersGrantCite /></util:markdown2html>
+				<util:markdown2html><strapi:tenantFootersGrantCite /></util:markdown2html>
 			</div>
 			<div class="col col-12 p-0">
 				<hr class="footer-hr">
@@ -61,7 +61,7 @@
 		</div>
 		<div class="row footer-block">
 			<div id="credits-footer" class="footer-center">
-				<util:markdown2html><strapi:footersCredits /></util:markdown2html>
+				<util:markdown2html><strapi:tenantFootersCredits /></util:markdown2html>
 			</div>
 			<div class="col col-12 p-0">
 				<hr class="footer-hr">
@@ -69,7 +69,7 @@
 		</div>
 		<div class="row footer-block">
 			<div class="col-xs-12 col-md-3">
-				<util:markdown2html><strapi:footersSignup /></util:markdown2html>
+				<util:markdown2html><strapi:tenantFootersSignup /></util:markdown2html>
 			</div>
 		</div>
 		<div class="row footer-social">
@@ -82,5 +82,5 @@
 				</ul>
 			</div>
 		</diV>
-	</strapi:footers>
+	</strapi:tenantFooters>
 </div>
