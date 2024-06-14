@@ -11,7 +11,14 @@
 .settings/org.eclipse.wst.validation.prefs -text
 WebContent/META-INF/MANIFEST.MF -text
 WebContent/_include.jsp -text
+WebContent/account-instructions/checklist.jsp -text
+WebContent/account-instructions/index.jsp -text
+WebContent/blocks/text_right.jsp -text
 WebContent/branding.jsp -text
+WebContent/duas/index.jsp -text
+WebContent/dur/index.jsp -text
+WebContent/files/related_image.jsp -text
+WebContent/files/related_image_pos.jsp -text
 WebContent/footer.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
