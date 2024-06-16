@@ -6,7 +6,10 @@
 
 <body>
 	<div class="container-fluid">
-		<jsp:include page="../header.jsp" />
+		<jsp:include page="../header.jsp">
+			<jsp:param value="3" name="navbar"/>
+			<jsp:param value="3" name="profile"/>
+		</jsp:include>
 		<div class="row flex-nowrap main-block">
 			<div class="block">
 				<strapi:tenantAccountChecklists ID="1">

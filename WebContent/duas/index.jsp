@@ -6,7 +6,10 @@
 
 <body>
 	<div class="container-fluid">
-		<jsp:include page="../header.jsp" />
+		<jsp:include page="../header.jsp">
+			<jsp:param value="3" name="navbar"/>
+			<jsp:param value="3" name="profile"/>
+		</jsp:include>
 		<div class="row flex-nowrap main-block">
 			<div class="col-xs-8">
 				<strapi:tenantDuaLists ID="1">

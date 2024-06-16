@@ -2,7 +2,23 @@
 
 <strapi:navBars ID="${param.navbar}">
 	<nav class="navbar navbar-expand-lg">
-		<a class="navbar-brand" href="#"><img src="<util:applicationRoot/>/resources/images/logo.png" height=50px><strapi:navBarsName/></a>
+		<a class="navbar-brand" href="<strapi:tenantProfiles ID="6"><strapi:tenantProfilesUrl/></strapi:tenantProfiles>">
+			<jsp:include page="../files/related_image.jsp">
+				<jsp:param name="type" value="api::tenant-profile.tenant-profile" />
+				<jsp:param name="field" value="banner_icon" />
+				<jsp:param name="id" value="6" />
+				<jsp:param name="format" value="auto-height" />
+			</jsp:include>
+		</a>
+		<a class="navbar-brand" href="<strapi:tenantProfiles ID="${param.profile}"><strapi:tenantProfilesUrl/></strapi:tenantProfiles>">
+			<jsp:include page="../files/related_image.jsp">
+				<jsp:param name="type" value="api::tenant-profile.tenant-profile" />
+				<jsp:param name="field" value="banner_icon" />
+				<jsp:param name="id" value="${param.profile}" />
+				<jsp:param name="format" value="auto-height" />
+			</jsp:include>
+			<strapi:navBarsName/>
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -20,7 +36,7 @@
 											<strapi:foreachNavItemsNavColumnLinks var="item" sortCriteria="nav_item_order">
 												<strapi:navItemsNavColumnLinks>
 													<strapi:navItems ID="${tag_navItemsNavColumnLinks.navItemId}">
-														<a class="dropdown-item" href="<util:applicationRoot/><strapi:navItemsUrl/>"><strapi:navItemsLabel/></a>
+														<a class="dropdown-item" href="<strapi:navItemsUrl/>"><strapi:navItemsLabel/></a>
 													</strapi:navItems>
 												</strapi:navItemsNavColumnLinks>
 											</strapi:foreachNavItemsNavColumnLinks>
@@ -28,7 +44,7 @@
 									</li>
 								</c:when>
 								<c:otherwise>
-									<li class="nav-item active"><a class="nav-link" href="<util:applicationRoot/><strapi:navColumnsUrl/>"><strapi:navColumnsLabel/></a></li>			
+									<li class="nav-item active"><a class="nav-link" href="<strapi:navColumnsUrl/>"><strapi:navColumnsLabel/></a></li>			
 								</c:otherwise>
 							</c:choose>
 						</strapi:navColumns>

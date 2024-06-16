@@ -118,5 +118,6 @@
 </div>
 
 <jsp:include page="nav-bars/dynamic.jsp">
-	<jsp:param name="navbar" value="3"/>
+	<jsp:param name="navbar" value="${param.navbar}"/>
+	<jsp:param name="profile" value="${param.profile}"/>
 </jsp:include>

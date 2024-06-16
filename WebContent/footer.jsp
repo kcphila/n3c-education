@@ -50,9 +50,9 @@
 			<div class="col-xs-12 col-md-3">
 				<jsp:include page="files/related_image.jsp">
 					<jsp:param name="type" value="api::tenant-profile.tenant-profile" />
-					<jsp:param name="field" value="icon" />
+					<jsp:param name="field" value="banner_icon" />
 					<jsp:param name="id" value="3" />
-					<jsp:param name="format" value="auto-height" />
+					<jsp:param name="format" value="auto" />
 				</jsp:include>
 			</div>
 			<div class="col-xs-12 col-md-9">
