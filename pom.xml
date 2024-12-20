@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>n3c-education</groupId>
   <artifactId>n3c-education</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -19,11 +19,28 @@
         <version>3.2.3</version>
         <configuration>
           <warSourceDirectory>WebContent</warSourceDirectory>
+          <webResources>
+            <resource>
+              <directory>strapi-reference</directory>
+              <targetPath>WEB-INF/classes</targetPath>
+            </resource>
+             <resource>
+              <directory>meta-reference</directory>
+              <targetPath>META-INF</targetPath>
+            </resource>
+          </webResources>
         </configuration>
       </plugin>
     </plugins>
   </build>
 	<dependencies>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.7.4</version>
+            </dependency>
+
 		<dependency>
 			<groupId>JSONTagLib</groupId>
 			<artifactId>JSONTagLib</artifactId>
